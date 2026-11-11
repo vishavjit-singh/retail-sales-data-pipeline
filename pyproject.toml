@@ -1,0 +1,19 @@
+[project]
+name = "retail-sales-data-pipeline"
+version = "1.0.0"
+description = "Incremental batch ETL into a star-schema warehouse with data quality gates."
+authors = [{ name = "Vishavjit Singh Saini" }]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]

@@ -1,0 +1,25 @@
+# Pipeline configuration. Paths are relative to the repository root.
+paths:
+  raw_dir: data/raw
+  warehouse: data/warehouse/sales.db
+  images_dir: docs/images
+
+generate:
+  seed: 42
+  start_date: "2026-01-01"
+  customers: 600
+  products: 120
+  orders_per_day: 180
+  dirty_rate: 0.04        # share of order rows deliberately corrupted to exercise validation
+
+# Static conversion rates used to normalise order amounts to INR.
+# Illustrative values for the synthetic dataset, not live market rates.
+fx_to_inr:
+  INR: 1.0
+  USD: 83.0
+  EUR: 90.0
+
+quality:
+  max_reject_rate: 0.08   # fail the run if more than 8% of order rows are rejected
+  max_null_rate: 0.0      # on loaded fact rows
+  min_rows: 1
