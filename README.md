@@ -160,7 +160,7 @@ CI runs lint and tests on Python 3.11 and 3.12. It also runs the full demo and b
 ## Author
 
 **Vishavjit Singh Saini**, Data Engineer
-[Portfolio](https://vishavjit-singh.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/vishavjit-singh-7011211ab/) · [GitHub](https://github.com/vishavjit-singh)
+[Portfolio](https://vishavjit-saini.pages.dev/) · [LinkedIn](https://www.linkedin.com/in/vishavjit-singh-7011211ab/) · [GitHub](https://github.com/vishavjit-singh)
 
 ## License
 
